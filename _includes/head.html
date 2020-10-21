@@ -16,12 +16,8 @@
   <!-- RSS -->
   {% feed_meta %}
 
-  <!-- PostHog -->
-  <script src="https://cyanbane-posthog.herokuapp.com/static/array.js"></script>
-  <script>
-  posthog.init('lMfbKoYdBSMy4KNZMcKNGkspNzkdVuYZ38Bi-F96RBI', {api_host: 'https://cyanbane-posthog.herokuapp.com'})
-  </script>
-  
+<script async defer data-domain="cyanbane.com" src="https://plausible.io/js/plausible.js"></script>
+
   <!-- Google Analytics-->
   {% if site.google_analytics and jekyll.environment == 'production' %}
   {% include analytics.html %}
